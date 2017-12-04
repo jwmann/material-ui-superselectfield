@@ -176,6 +176,12 @@ describe('Selections presenter', () => {
 
   it('should display custom [hintText] properly')
 
+  it('use the custom styles provided to [selectionsPresenterStyle]', () => {
+    const wrapper = shallowWithContext(<SuperSelectField showAutocompleteThreshold="always" selectionsPresenterStyle={{backgroundColor: 'red'}}>{testChildren}</SuperSelectField>)
+    const selectionsPresenter = wrapper.find('SelectionsPresenter')
+    expect(selectionsPresenter.dive().first('div').prop('style').backgroundColor).toMatch('red')
+  })
+
   it('use the default selection renderer properly')
 
   it('executes custom selection renderer function properly')

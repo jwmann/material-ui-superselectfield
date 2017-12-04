@@ -213,7 +213,7 @@ class SelectField extends Component {
   render() {
     const { children, floatingLabel, hintText, hintTextAutocomplete, multiple, disabled, nb2show,
       autocompleteFilter, selectionsRenderer, menuCloseButton, anchorOrigin, canAutoPosition,
-      style, menuStyle, elementHeight, innerDivStyle, selectedMenuItemStyle, menuGroupStyle, menuFooterStyle,
+      style, selectionsPresenterStyle, menuStyle, elementHeight, innerDivStyle, selectedMenuItemStyle, menuGroupStyle, menuFooterStyle,
       floatingLabelStyle, floatingLabelFocusStyle, underlineStyle, underlineFocusStyle,
       autocompleteUnderlineStyle, autocompleteUnderlineFocusStyle, noMatchFound, noMatchFoundStyle,
       checkedIcon, unCheckedIcon, hoverColor, checkPosition, errorText, errorStyle, underlineErrorStyle
@@ -336,6 +336,7 @@ class SelectField extends Component {
           hintText={hintText}
           errorText={errorText}
           errorStyle={errorStyle}
+          selectionsPresenterStyle={selectionsPresenterStyle}
           underlineErrorStyle={underlineErrorStyle}
           muiTheme={this.context.muiTheme}
           selectedValues={this.state.selectedItems}

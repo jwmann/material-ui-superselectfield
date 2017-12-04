@@ -21,6 +21,7 @@ export const selectFieldTypes = {
     horizontal: oneOf(['left', 'right'])
   }),
   style: object,
+  selectionsPresenterStyle: object,
   menuStyle: object,
   menuGroupStyle: object,
   checkPosition: oneOf(['', 'left', 'right']),

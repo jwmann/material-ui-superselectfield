@@ -75,6 +75,7 @@ PropTypes should raise warnings if implementing otherwise.
 | Name             | Type          | Default    | Description |
 |:----             |:----          |:----       |:---- |
 | style | object | {} | Insert your own inlined styles, applied to the root component. |
+| selectionsPresenterStyle | object | {} | Insert your own inlined styles, applied to the wrapper div of the SelectionsPresenter component. |
 | menuStyle | object | {} | Styles applied to the comtainer which will receive your children components. |
 | menuGroupStyle | object | {} | Styles applied to the MenuItems hosting your \<optgroup/>. |
 | innerDivStyle | object | {} | Styles applied to the inner div of MenuItems hosting each of your children components. |

@@ -10,7 +10,8 @@ const styles = {
     position: 'relative',
     display: 'flex',
     justifyContent: 'flex-end',
-    alignItems: 'center'
+    alignItems: 'center',
+    flex: 1
   },
   selections: { flex: 1 },
   underline: { position: 'relative', marginTop: 4 }
@@ -20,7 +21,7 @@ const SelectionsPresenter = ({
   selectedValues, selectionsRenderer,
   floatingLabel, hintText,
   muiTheme, floatingLabelStyle, floatingLabelFocusStyle,
-  underlineStyle, underlineFocusStyle,
+  selectionsPresenterStyle, underlineStyle, underlineFocusStyle,
   isFocused, isOpen, disabled,
   errorText, errorStyle, underlineErrorStyle
 }) => {
@@ -57,7 +58,7 @@ const SelectionsPresenter = ({
   })
 
   return (
-    <div style={styles.column}>
+    <div style={{...styles.column, ...selectionsPresenterStyle}}>
       <div style={styles.row}>
         <div style={styles.selections}>
           {floatingLabel &&
